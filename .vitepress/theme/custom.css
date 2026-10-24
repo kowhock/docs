@@ -1,0 +1,46 @@
+:root {
+  --vp-c-brand-1: #1d4ed8;
+  --vp-c-brand-2: #2563eb;
+  --vp-c-brand-3: #1e40af;
+  --vp-c-brand-soft: rgba(37, 99, 235, 0.12);
+  --vp-home-hero-name-color: #111827;
+}
+
+/* Screenshots: framed, and never wider than the column */
+.vp-doc img {
+  display: block;
+  max-width: 100%;
+  margin: 16px 0 8px;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 12px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+}
+
+/* Phone screenshots stay phone-sized */
+
+/* Callout numbers in the text match the orange circles on the screenshots */
+.vp-doc .n {
+  display: inline-grid;
+  place-items: center;
+  width: 22px;
+  height: 22px;
+  margin-right: 6px;
+  border-radius: 50%;
+  background: #f97316;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+  vertical-align: 1px;
+  text-indent: 0;
+}
+
+.vp-doc .callouts ul {
+  list-style: none;
+  padding-left: 0;
+}
+.vp-doc .callouts li {
+  padding-left: 30px;
+  text-indent: -30px;
+  margin: 6px 0;
+}
