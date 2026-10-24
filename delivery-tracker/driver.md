@@ -1,6 +1,6 @@
 # Driver phone view
 
-What drivers see on their phone: today's DOs, trip by trip, in the order the office planned. See [Signing in](./sign-in) for the PIN keypad and adding the app to the home screen.
+What drivers see on their phone: today's DOs, trip by trip, in the order the office planned. See [Signing in](./sign-in) for the PIN keypad and [Add to home screen](./install) to put the app on the phone.
 
 ## Today's deliveries
 

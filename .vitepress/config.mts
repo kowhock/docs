@@ -19,6 +19,7 @@ export default defineConfig({
           items: [
             { text: "Start here", link: "/delivery-tracker/" },
             { text: "Signing in", link: "/delivery-tracker/sign-in" },
+            { text: "Add to home screen", link: "/delivery-tracker/install" },
           ],
         },
         {

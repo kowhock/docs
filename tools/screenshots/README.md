@@ -16,6 +16,7 @@ Retake them when a page in the app changes.
 | `cap_deliveries.py` | Sign in, Deliveries, Outstanding, Special DO |
 | `cap_office.py` | Driver status, Lorries, Trip form (`python3 cap_office.py drivers` for one section) |
 | `cap_driver.py` | Driver phone view |
+| `cap_install.py` | Draws callouts on real phone screenshots for *Add to home screen* (see below) |
 | `to_webp.py` | Converts the PNGs to the WebP files the guide uses |
 
 ## Steps
@@ -62,3 +63,14 @@ Retake them when a page in the app changes.
    Each script resets the demo data first, so they can run in any order.
 
 The demo data follows the real date: "today" in the demo is the day you run it. `cap_office.py` picks fixed dates for the trip form, so update those to dates inside the last month.
+
+## Add to home screen (real phone screenshots)
+
+The iPhone share sheet and Chrome menu are part of the phone, so they can't be captured from the demo app. Take them on real phones instead:
+
+1. On each phone, open the app link and take a screenshot at each step (iPhone: side button + volume up; Android: power + volume down).
+2. Save them into `phone-raw/` as `iphone-1.png` (Share button), `iphone-2.png` (share sheet), `iphone-3.png` (Add screen), `android-1.png` (⋮ button), `android-2.png` (menu), `android-3.png` (Install popup).
+3. Run `python3 cap_install.py --grid`. It writes `phone-raw/grid-*.png` with a 10% grid so you can read off where each button is.
+4. Update the boxes in `SHOTS` at the top of `cap_install.py` (x, y, width, height as fractions), then run `python3 cap_install.py`.
+
+Crop out personal things (notifications, other apps) before saving. `phone-raw/` is not committed.

@@ -16,11 +16,7 @@ Your username and password (or PIN) are set up by the admin. If you forget them,
 </div>
 
 ::: tip Make it an app on the phone
-Open the link in the browser, then:
-- **iPhone (Safari):** tap Share → **Add to Home Screen**
-- **Android (Chrome):** tap ⋮ → **Add to Home screen**
-
-It then opens like a normal app from the home screen.
+Add it to your home screen so it opens like a normal app. [Step-by-step pictures for iPhone and Android](./install).
 :::
 
 ## On a computer (office)
